@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Prueba.Models
 {
@@ -17,6 +18,7 @@ namespace Prueba.Models
         public float Altura { get; set;}
         [MaxLength(100)]
         public string Id { get; set;}
+        [ForeignKey(nameof(Id))]
         [Required]
         public DateTime Fecha { get; set;}
     }
