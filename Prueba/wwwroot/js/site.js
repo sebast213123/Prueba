@@ -5,4 +5,3 @@
 
 // Write your JavaScript code.
 
-<button type="button" class="btn btn-success">Success</button>
