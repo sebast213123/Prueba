@@ -22,3 +22,17 @@ body {
   margin-bottom: 60px;
   background-color:aqua;
 }
+
+.estilo{
+    font-size:50px;
+    font-family:'Bodoni MT Poster';
+    color:blueviolet;
+
+}
+
+
+.estilo2 {
+    font-size: 50px;
+    font-family: "Dutch801 XBd BT";
+    color: green;
+}
