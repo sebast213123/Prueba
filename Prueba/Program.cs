@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Prueba.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<PruebaContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("PruebaContext") ?? throw new InvalidOperationException("Connection string 'PruebaContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
